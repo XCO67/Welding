@@ -192,6 +192,7 @@ body {
     gap: 5px;
     position: absolute;
     right: 20px;
+    z-index: 100;
 }
 
 .hamburger span {
@@ -1296,6 +1297,12 @@ body {
         right: auto;
         padding: 0.5rem 1rem;
         font-size: 0.85rem;
+        margin-right: 50px;
+    }
+    
+    .hamburger {
+        right: 20px;
+        z-index: 100;
     }
 
     .about-content {
@@ -1455,6 +1462,16 @@ body {
 }
 
 @media (max-width: 480px) {
+    .contact-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+        margin-right: 45px;
+    }
+    
+    .hamburger {
+        right: 15px;
+    }
+    
     .hero-title {
         font-size: 2rem;
     }
