@@ -149,6 +149,88 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Prevent body scroll when modal is open (mobile fix)
+function preventBodyScroll() {
+    const body = document.body;
+    const scrollY = window.scrollY;
+    body.style.position = 'fixed';
+    body.style.top = `-${scrollY}px`;
+    body.style.width = '100%';
+}
+
+function allowBodyScroll() {
+    const body = document.body;
+    const scrollY = body.style.top;
+    body.style.position = '';
+    body.style.top = '';
+    body.style.width = '';
+    if (scrollY) {
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    }
+}
+
+// Contact Modal
+const contactBtn = document.getElementById('contactBtn');
+const contactModal = document.getElementById('contactModal');
+const modalClose = document.querySelector('.modal-close');
+const contactForm = document.getElementById('contactForm');
+
+if (contactBtn) {
+    contactBtn.addEventListener('click', () => {
+        contactModal.classList.add('active');
+        preventBodyScroll();
+    });
+}
+
+if (modalClose) {
+    modalClose.addEventListener('click', () => {
+        contactModal.classList.remove('active');
+        allowBodyScroll();
+    });
+}
+
+// Close modal when clicking outside
+if (contactModal) {
+    contactModal.addEventListener('click', (e) => {
+        if (e.target === contactModal) {
+            contactModal.classList.remove('active');
+            allowBodyScroll();
+        }
+    });
+}
+
+// Close modal on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && contactModal.classList.contains('active')) {
+        contactModal.classList.remove('active');
+        allowBodyScroll();
+    }
+});
+
+// Contact form submission
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            message: document.getElementById('message').value
+        };
+        
+        // Here you would typically send the data to a server
+        // For now, we'll just show an alert and reset the form
+        alert('Thank you for your message! We will contact you soon.');
+        contactForm.reset();
+        
+        // Optional: Close modal after submission
+        // contactModal.classList.remove('active');
+        // document.body.style.overflow = '';
+    });
+}
+
 // About section slide-up effect covering hero
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
