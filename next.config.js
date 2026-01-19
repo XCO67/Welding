@@ -8,7 +8,6 @@ const nextConfig = {
   compress: true,
   reactStrictMode: true,
   swcMinify: true,
-  output: undefined, // Let Vercel handle the output
 }
 
 module.exports = nextConfig
