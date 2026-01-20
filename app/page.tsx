@@ -12,7 +12,7 @@ export default function Home() {
       {/* Fixed Background Layer */}
       <div className="fixed inset-0 z-0">
         <Image
-          src="/pictures/welder-engineer-ss2495429543.webp"
+          src="/pictures/background2.jpg"
           alt="Welding Background"
           fill
           className="object-cover opacity-50"
