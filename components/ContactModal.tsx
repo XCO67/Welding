@@ -239,7 +239,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                     <div>
                       <label
                         htmlFor="phone"
-                        className="block text-xs font-medium text-gray-300 mb-1.5"
+                        className="block text-xs font-light text-gray-300 mb-1.5"
                       >
                         Phone
                       </label>
@@ -259,7 +259,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                     <div>
                       <label
                         htmlFor="message"
-                        className="block text-xs font-medium text-gray-300 mb-1.5"
+                        className="block text-xs font-light text-gray-300 mb-1.5"
                       >
                         Message
                       </label>
