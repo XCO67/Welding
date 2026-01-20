@@ -25,10 +25,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/pictures/ANM no text no background.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/pictures/ANM no text no background.png" />
-      </head>
       <body>{children}</body>
     </html>
   );
