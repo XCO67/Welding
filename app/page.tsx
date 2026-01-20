@@ -12,13 +12,14 @@ export default function Home() {
       {/* Fixed Background Layer */}
       <div className="fixed inset-0 z-0">
         <Image
-          src="/pictures/background2.jpg"
-          alt="Welding Background"
+          src="/pictures/welder-engineer-ss2495429543.webp"
+          alt=""
           fill
-          className="object-cover opacity-50"
+          className="object-cover opacity-30"
           priority
+          unoptimized
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/70 via-gray-800/60 to-gray-900/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-800/75 to-gray-900/80" />
         {/* Subtle grid pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:50px_50px]" />
       </div>

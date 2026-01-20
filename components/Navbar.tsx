@@ -56,6 +56,7 @@ export default function Navbar() {
                 width={70}
                 height={70}
                 className="object-contain"
+                style={{ height: 'auto' }}
               />
               <div className="flex flex-col">
                 <span className="text-sm font-bold text-gray-900 uppercase tracking-tight leading-tight">
