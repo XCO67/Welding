@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   keywords: ["CNC machining", "laser cutting", "sheet metal", "3D printing", "welding", "manufacturing", "Kuwait"],
   authors: [{ name: "Alsarraf Numercial Machining" }],
   robots: "index, follow",
+  icons: {
+    icon: "/pictures/ANM no text no background.png",
+    apple: "/pictures/ANM no text no background.png",
+  },
   openGraph: {
     title: "Alsarraf Numercial Machining | Professional Manufacturing Services",
     description: "Professional manufacturing and fabrication services with unmatched quality and craftsmanship",
@@ -21,6 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/pictures/ANM no text no background.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/pictures/ANM no text no background.png" />
+      </head>
       <body>{children}</body>
     </html>
   );
