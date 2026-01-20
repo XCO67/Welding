@@ -19,8 +19,7 @@ export default function Home() {
           priority
           unoptimized
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/40 via-gray-800/35 to-gray-900/40" />
-        {/* Subtle grid pattern */}
+        {/* Grid pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.03)_1px,transparent_1px)] bg-[size:50px_50px]" />
       </div>
 
