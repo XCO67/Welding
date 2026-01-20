@@ -33,7 +33,7 @@ export default function Hero() {
           className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-8"
         >
           <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-          <span className="text-sm text-gray-300 font-medium">
+          <span className="text-sm text-gray-300 font-light">
             Professional Manufacturing Services
           </span>
         </motion.div>
@@ -74,7 +74,7 @@ export default function Hero() {
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.98 }}
             onClick={scrollToPortfolio}
-            className="group relative px-8 py-4 bg-gradient-to-r from-primary to-accent text-white rounded-full text-lg font-semibold shadow-lg hover:shadow-xl hover:shadow-primary/30 transition-all overflow-hidden"
+            className="group relative px-8 py-4 bg-gradient-to-r from-primary to-accent text-white rounded-full text-lg font-light shadow-lg hover:shadow-xl hover:shadow-primary/30 transition-all overflow-hidden"
           >
             <span className="relative z-10 flex items-center space-x-2">
               <span>View Our Work</span>
@@ -110,7 +110,7 @@ export default function Hero() {
                 element.scrollIntoView({ behavior: 'smooth' });
               }
             }}
-            className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full text-lg font-semibold hover:bg-white/20 transition-all"
+            className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full text-lg font-light hover:bg-white/20 transition-all"
           >
             Our Services
           </motion.button>

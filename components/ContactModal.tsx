@@ -135,7 +135,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                         </svg>
                       </div>
                       <p className="text-xs text-gray-400 mb-1">Phone</p>
-                      <p className="text-white hover:text-primary transition-colors text-sm font-medium">
+                      <p className="text-white hover:text-primary transition-colors text-sm font-light">
                         {COMPANY_INFO.phone}
                       </p>
                     </motion.a>
@@ -176,7 +176,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                         </svg>
                       </div>
                       <p className="text-xs text-gray-400 mb-1">Instagram</p>
-                      <p className="text-white hover:text-primary transition-colors text-sm font-medium">
+                      <p className="text-white hover:text-primary transition-colors text-sm font-light">
                         @anmcnc
                       </p>
                     </motion.a>
@@ -190,7 +190,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   transition={{ delay: 0.3 }}
                   className="bg-white/5 backdrop-blur-sm rounded-2xl p-5 border border-white/10"
                 >
-                  <h3 className="text-base font-semibold text-white mb-4">
+                  <h3 className="text-base font-bold text-white mb-4">
                     Send us a Message
                   </h3>
                   <form onSubmit={handleSubmit} className="space-y-3">
@@ -198,7 +198,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                       <div>
                         <label
                           htmlFor="name"
-                          className="block text-xs font-medium text-gray-300 mb-1.5"
+                          className="block text-xs font-light text-gray-300 mb-1.5"
                         >
                           Name
                         </label>
@@ -218,7 +218,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                       <div>
                         <label
                           htmlFor="email"
-                          className="block text-xs font-medium text-gray-300 mb-1.5"
+                          className="block text-xs font-light text-gray-300 mb-1.5"
                         >
                           Email
                         </label>
@@ -279,7 +279,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                       type="submit"
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="w-full bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary text-white py-3 rounded-xl font-semibold text-base transition-all shadow-lg hover:shadow-primary/30"
+                      className="w-full bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary text-white py-3 rounded-xl font-light text-base transition-all shadow-lg hover:shadow-primary/30"
                     >
                       Send Message
                     </motion.button>

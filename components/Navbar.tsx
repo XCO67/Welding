@@ -59,10 +59,10 @@ export default function Navbar() {
                 style={{ height: 'auto' }}
               />
               <div className="flex flex-col">
-                <span className="text-sm font-bold text-gray-900 uppercase tracking-tight leading-tight">
+                <span className="text-sm font-light text-gray-900 uppercase tracking-tight leading-tight">
                   ALSARRAF NUMERICAL MACHINING
                 </span>
-                <span className="text-xs font-medium text-gray-600 mt-0.5 leading-tight">
+                <span className="text-xs font-light text-gray-600 mt-0.5 leading-tight">
                   شركة الصراف نيومركال ماشينينغ
                 </span>
               </div>
@@ -77,7 +77,7 @@ export default function Navbar() {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1 + 0.3 }}
-                    className="relative px-4 py-2 font-medium text-gray-700 hover:text-primary transition-all duration-300 group"
+                    className="relative px-4 py-2 font-light text-gray-700 hover:text-primary transition-all duration-300 group"
                   >
                     <span className="relative z-10">{link.label}</span>
                     <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-300 group-hover:w-3/4" />
@@ -94,7 +94,7 @@ export default function Navbar() {
               transition={{ delay: 0.5 }}
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.98 }}
-              className="hidden md:block relative overflow-hidden bg-gradient-to-r from-primary via-primary to-accent text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-md hover:shadow-lg hover:shadow-primary/30 group"
+              className="hidden md:block relative overflow-hidden bg-gradient-to-r from-primary via-primary to-accent text-white px-6 py-2.5 rounded-full font-light transition-all shadow-md hover:shadow-lg hover:shadow-primary/30 group"
             >
               <span className="relative z-10 flex items-center space-x-2">
                 <span>Contact Us</span>
@@ -162,7 +162,7 @@ export default function Navbar() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
                     onClick={(e) => scrollToSection(e, link.href)}
-                    className="block w-full text-left text-gray-700 hover:text-primary font-medium py-3 px-4 rounded-lg hover:bg-gradient-to-r hover:from-primary/5 hover:to-accent/5 transition-all"
+                    className="block w-full text-left text-gray-700 hover:text-primary font-light py-3 px-4 rounded-lg hover:bg-gradient-to-r hover:from-primary/5 hover:to-accent/5 transition-all"
                   >
                     {link.label}
                   </motion.button>
@@ -175,7 +175,7 @@ export default function Navbar() {
                     setContactModalOpen(true);
                     setMobileMenuOpen(false);
                   }}
-                  className="w-full bg-gradient-to-r from-primary to-accent text-white px-6 py-3 rounded-full font-semibold hover:from-accent hover:to-primary transition-all shadow-md mt-4"
+                  className="w-full bg-gradient-to-r from-primary to-accent text-white px-6 py-3 rounded-full font-light hover:from-accent hover:to-primary transition-all shadow-md mt-4"
                 >
                   Contact Us
                 </motion.button>

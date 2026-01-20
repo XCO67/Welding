@@ -44,7 +44,7 @@ export default function About() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.1, type: "spring", stiffness: 200 }}
-            className="inline-block px-4 py-2 bg-primary/20 text-primary text-sm font-semibold rounded-full mb-6"
+            className="inline-block px-4 py-2 bg-primary/20 text-primary text-sm font-light rounded-full mb-6"
           >
             About Us
           </motion.span>
