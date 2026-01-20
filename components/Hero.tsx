@@ -43,7 +43,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-white mb-6 leading-tight"
+          style={{ fontFamily: "'Space Grotesk', sans-serif" }}
         >
           <span className="block mb-2">Precision</span>
           <span className="block mb-2">Fabrication and Welding</span>

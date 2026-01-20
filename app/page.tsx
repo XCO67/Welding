@@ -12,13 +12,15 @@ export default function Home() {
       {/* Fixed Background Layer */}
       <div className="fixed inset-0 z-0">
         <Image
-          src="/pictures/welder-engineer-ss2495429543.webp"
+          src="/pictures/background3.jpg"
           alt=""
           fill
           className="object-cover"
           priority
           unoptimized
         />
+        {/* Black opacity overlay */}
+        <div className="absolute inset-0 bg-black/75" />
         {/* Grid pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.03)_1px,transparent_1px)] bg-[size:50px_50px]" />
       </div>
