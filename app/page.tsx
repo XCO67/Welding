@@ -15,7 +15,7 @@ export default function Home() {
           src="/pictures/welder-engineer-ss2495429543.webp"
           alt=""
           fill
-          className="object-cover opacity-40"
+          className="object-cover"
           priority
           unoptimized
         />
